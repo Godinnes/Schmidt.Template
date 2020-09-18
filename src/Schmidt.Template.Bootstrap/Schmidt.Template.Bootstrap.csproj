@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.8" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Schmidt.Template.Common\Schmidt.Template.Common.csproj" />
+    <ProjectReference Include="..\Schmidt.Template.Definition.Api\Schmidt.Template.Definition.Api.csproj" />
+    <ProjectReference Include="..\Schmidt.Template.Query.Application\Schmidt.Template.Query.Application.csproj" />
+  </ItemGroup>
+
+</Project>
