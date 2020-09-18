@@ -6,5 +6,6 @@ namespace Schmidt.Template.Query.Application.Queries.RacesQueries
 {
     public class GetRacesQuery : ICommand<IEnumerable<RaceQueryViewModel>>
     {
+        public string Name { get; set; }
     }
 }

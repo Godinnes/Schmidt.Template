@@ -14,7 +14,8 @@ namespace Schmidt.Template.Query.Application.Queries.RacesQueries
         public async Task<IEnumerable<RaceQueryViewModel>> Handle(GetRacesQuery request, CancellationToken cancellationToken)
         {
             var races = Enum.GetNames(typeof(RaceType))
-                .Select(r => new RaceQueryViewModel() { Name = r });
+                .Select(r => new RaceQueryViewModel() { Name = r })
+                .Where(r => string.IsNullOrEmpty(request.Name) || request.Name == r.Name);
             return races;
         }
     }

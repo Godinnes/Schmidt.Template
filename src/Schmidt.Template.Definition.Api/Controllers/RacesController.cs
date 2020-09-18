@@ -13,9 +13,8 @@ namespace Schmidt.Template.Definition.Api.Controllers
             _mediator = mediator;
         }
         [HttpGet("Search")]
-        public async Task<IActionResult> GetAll()
+        public async Task<IActionResult> GetAll(GetRacesQuery query)
         {
-            var query = new GetRacesQuery();
             var races = await _mediator.SendAsync(query);
             return Ok(races);
         }
