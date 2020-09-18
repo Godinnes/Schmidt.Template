@@ -1,8 +1,8 @@
-using System;
+﻿using System;
 
-namespace Schmidt.Template.Api
+namespace Schmidt.Template.Query.Application.ViewModel
 {
-    public class WeatherForecast
+    public class WeatherForecastViewModel
     {
         public DateTime Date { get; set; }
 

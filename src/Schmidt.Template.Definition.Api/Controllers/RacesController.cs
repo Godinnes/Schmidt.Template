@@ -1,11 +1,13 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Schmidt.Template.Common.Abstraction;
-using Schmidt.Template.Query.Application.Queries.RacesQueries;
+using Schmidt.Template.Query.Application.Queries.Races;
 using System.Threading.Tasks;
 
 namespace Schmidt.Template.Definition.Api.Controllers
 {
-    public class RacesController : Controller
+    [ApiController]
+    [Route("[controller]")]
+    public class RacesController : ControllerBase
     {
         private readonly IMyMediator _mediator;
         public RacesController(IMyMediator mediator)
@@ -13,7 +15,7 @@ namespace Schmidt.Template.Definition.Api.Controllers
             _mediator = mediator;
         }
         [HttpGet("Search")]
-        public async Task<IActionResult> GetAll(GetRacesQuery query)
+        public async Task<IActionResult> GetAllAsync([FromQuery]GetRacesQuery query)
         {
             var races = await _mediator.SendAsync(query);
             return Ok(races);

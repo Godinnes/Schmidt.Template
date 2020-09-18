@@ -1,5 +1,8 @@
-﻿namespace Schmidt.Template.Common.Enumerators
+﻿using System.Text.Json.Serialization;
+
+namespace Schmidt.Template.Common.Enumerators
 {
+    [JsonConverter(typeof(JsonStringEnumConverter))]
     public enum RaceType
     {
         Human = 0,

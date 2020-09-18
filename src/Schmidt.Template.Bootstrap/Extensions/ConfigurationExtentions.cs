@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
+using Schmidt.Template.Application.Commands.Persons;
 using Schmidt.Template.Common.Extensions;
-using Schmidt.Template.Definition.Api.Controllers;
-using Schmidt.Template.Query.Application.Queries.RacesQueries;
+using Schmidt.Template.Query.Application.Queries.Races;
 
 namespace Schmidt.Template.Bootstrap.Extensions
 {
@@ -9,9 +9,8 @@ namespace Schmidt.Template.Bootstrap.Extensions
     {
         public static void AddApiConfigurations(this IServiceCollection services)
         {
-            services.AddSingleton(typeof(Controller));
-
-            services.AddMyMediator(typeof(GetRacesQueryHandler));
+            services.AddMyMediator(typeof(GetRacesQueryHandler),
+                                   typeof(CreatePersonCommandHandler));
         }
     }
 }
