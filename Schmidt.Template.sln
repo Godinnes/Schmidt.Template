@@ -19,11 +19,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Schmidt.Template.Bootstrap"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "command stack", "command stack", "{817588BE-4006-45E9-BC47-89FC64D17C5C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Schmidt.Template.Domain", "src\Schmidt.Template.Domain\Schmidt.Template.Domain.csproj", "{2EE28EAE-F1C8-4A9B-8E17-F68FA2B97FC9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Schmidt.Template.Domain", "src\Schmidt.Template.Domain\Schmidt.Template.Domain.csproj", "{2EE28EAE-F1C8-4A9B-8E17-F68FA2B97FC9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Schmidt.Template.Application", "src\Schmidt.Template.Application\Schmidt.Template.Application.csproj", "{E06A3D76-C7B0-4912-99DD-B4420F824474}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Schmidt.Template.Application", "src\Schmidt.Template.Application\Schmidt.Template.Application.csproj", "{E06A3D76-C7B0-4912-99DD-B4420F824474}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Schmdt.Template.Query.Model", "src\Schmdt.Template.Query.Model\Schmdt.Template.Query.Model.csproj", "{116FE8DC-3EF2-47D7-9C6D-80556EE5F176}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Schmdt.Template.Query.Model", "src\Schmdt.Template.Query.Model\Schmdt.Template.Query.Model.csproj", "{116FE8DC-3EF2-47D7-9C6D-80556EE5F176}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Schmidt.Template.Data", "src\Schmidt.Template.Data\Schmidt.Template.Data.csproj", "{822253C2-8602-4829-9349-3653DB523BD3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{116FE8DC-3EF2-47D7-9C6D-80556EE5F176}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{116FE8DC-3EF2-47D7-9C6D-80556EE5F176}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{116FE8DC-3EF2-47D7-9C6D-80556EE5F176}.Release|Any CPU.Build.0 = Release|Any CPU
+		{822253C2-8602-4829-9349-3653DB523BD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{822253C2-8602-4829-9349-3653DB523BD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{822253C2-8602-4829-9349-3653DB523BD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{822253C2-8602-4829-9349-3653DB523BD3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -77,6 +83,7 @@ Global
 		{2EE28EAE-F1C8-4A9B-8E17-F68FA2B97FC9} = {817588BE-4006-45E9-BC47-89FC64D17C5C}
 		{E06A3D76-C7B0-4912-99DD-B4420F824474} = {817588BE-4006-45E9-BC47-89FC64D17C5C}
 		{116FE8DC-3EF2-47D7-9C6D-80556EE5F176} = {EE411F12-4DD9-42F5-8C9D-40FB7D7282BE}
+		{822253C2-8602-4829-9349-3653DB523BD3} = {817588BE-4006-45E9-BC47-89FC64D17C5C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9F1140F2-D656-4009-9AE6-615FEC47BBE2}

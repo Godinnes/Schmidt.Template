@@ -8,6 +8,7 @@ namespace Schmidt.Template.Domain.Entities
         public Guid ID { get; private set; }
         public string Name { get; private set; }
         public RaceType Race { get; private set; }
+        private Person() { }
         private Person(Guid id,
                        string name,
                        RaceType race)

@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Schmidt.Template.Common\Schmidt.Template.Common.csproj" />
+    <ProjectReference Include="..\Schmidt.Template.Data\Schmidt.Template.Data.csproj" />
     <ProjectReference Include="..\Schmidt.Template.Domain\Schmidt.Template.Domain.csproj" />
   </ItemGroup>
 

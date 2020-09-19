@@ -5,11 +5,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="3.1.8" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.8" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Schmidt.Template.Common\Schmidt.Template.Common.csproj" />
+    <ProjectReference Include="..\Schmidt.Template.Data\Schmidt.Template.Data.csproj" />
     <ProjectReference Include="..\Schmidt.Template.Definition.Api\Schmidt.Template.Definition.Api.csproj" />
     <ProjectReference Include="..\Schmidt.Template.Query.Application\Schmidt.Template.Query.Application.csproj" />
   </ItemGroup>
