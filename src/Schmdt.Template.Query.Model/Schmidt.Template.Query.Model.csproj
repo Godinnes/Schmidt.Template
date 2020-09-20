@@ -4,8 +4,8 @@
     <VersionSuffix>$(VersionSuffix)</VersionSuffix>
     <VersionPrefix>5.0.0</VersionPrefix>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <AssemblyName>Schmidt.Template.Domain</AssemblyName>
-    <PackageId>Schmidt.Template.Domain</PackageId>
+    <AssemblyName>Schmidt.Template.Query.Model</AssemblyName>
+    <PackageId>Schmidt.Template.Query.Model</PackageId>
 
     <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>

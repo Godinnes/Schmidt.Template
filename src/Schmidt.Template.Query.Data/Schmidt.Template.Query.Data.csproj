@@ -4,8 +4,8 @@
     <VersionSuffix>$(VersionSuffix)</VersionSuffix>
     <VersionPrefix>5.0.0</VersionPrefix>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <AssemblyName>Schmidt.Template.Bootstrap</AssemblyName>
-    <PackageId>Schmidt.Template.Bootstrap</PackageId>
+    <AssemblyName>Schmidt.Template.Query.Data</AssemblyName>
+    <PackageId>Schmidt.Template.Query.Data</PackageId>
 
     <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
@@ -14,17 +14,17 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.8" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite.Design" Version="1.1.6" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Schmidt.Template.Common\Schmidt.Template.Common.csproj" />
-    <ProjectReference Include="..\Schmidt.Template.Data\Schmidt.Template.Data.csproj" />
-    <ProjectReference Include="..\Schmidt.Template.Definition.Api\Schmidt.Template.Definition.Api.csproj" />
-    <ProjectReference Include="..\Schmidt.Template.Query.Application\Schmidt.Template.Query.Application.csproj" />
-    <ProjectReference Include="..\Schmidt.Template.Query.Data\Schmidt.Template.Query.Data.csproj" />
+    <ProjectReference Include="..\Schmdt.Template.Query.Model\Schmidt.Template.Query.Model.csproj" />
   </ItemGroup>
 
 </Project>

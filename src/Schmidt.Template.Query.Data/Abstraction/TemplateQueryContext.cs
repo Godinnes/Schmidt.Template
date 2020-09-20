@@ -1,16 +1,16 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Schmidt.Template.Common.Extensions;
-using Schmidt.Template.Domain.Entities;
+using Schmidt.Template.Query.Model.Model;
 using System.Reflection;
 
-namespace Schmidt.Template.Data.Abstraction
+namespace Schmidt.Template.Query.Data.Abstraction
 {
-    public class TemplateContext : DbContext
+    public class TemplateQueryContext : DbContext
     {
         private readonly IConfiguration _configuration;
-        public TemplateContext(DbContextOptions<TemplateContext> options,
-                               IConfiguration configuration)
+        public TemplateQueryContext(DbContextOptions<TemplateQueryContext> options,
+                                    IConfiguration configuration)
             : base(options)
         {
             _configuration = configuration;
@@ -27,7 +27,6 @@ namespace Schmidt.Template.Data.Abstraction
                 build.ToTable("Persons");
                 build.HasKey(k => k.ID);
             });
-            base.OnModelCreating(modelBuilder);
         }
     }
 }

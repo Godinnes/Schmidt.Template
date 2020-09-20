@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Schmidt.Template.Bootstrap.Extensions;
+using Schmidt.Template.Bootstrap;
 
 namespace Schmidt.Template.Api
 {
@@ -23,7 +23,7 @@ namespace Schmidt.Template.Api
 
             services.AddSwaggerGen();
 
-            services.AddApiConfigurations();
+            services.ConfigureApi(Configuration);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -9,7 +9,7 @@ namespace Schmidt.Template.Data.Abstraction
     {
         protected readonly DbContext Context;
         protected DbSet<TEntity> Entity { get; set; }
-        public RepositoryBase(DbContext context, DbContextOptions options)
+        public RepositoryBase(DbContext context)
         {
             Context = context;
 

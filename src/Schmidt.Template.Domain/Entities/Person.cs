@@ -24,5 +24,9 @@ namespace Schmidt.Template.Domain.Entities
                               name,
                               race);
         }
+        public void UpdateName(string name)
+        {
+            Name = name;
+        }
     }
 }

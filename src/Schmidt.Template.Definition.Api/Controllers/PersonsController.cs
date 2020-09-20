@@ -21,11 +21,23 @@ namespace Schmidt.Template.Definition.Api.Controllers
             var persons = await _mediator.SendAsync(query);
             return Ok(persons);
         }
-        [HttpPost()]
+        [HttpPost]
         public async Task<IActionResult> CreatePersonAsync([FromBody]CreatePersonCommand command)
         {
             var personID = await _mediator.SendAsync(command);
             return Ok(personID);
+        }
+        [HttpPatch]
+        public async Task<IActionResult> ChangePersonAsync([FromBody]ChangePersonCommand command)
+        {
+            await _mediator.SendAsync(command);
+            return Ok();
+        }
+        [HttpDelete]
+        public async Task<IActionResult> RemovePersonAsync([FromQuery]RemovePersonCommand command)
+        {
+            await _mediator.SendAsync(command);
+            return Ok();
         }
     }
 }
