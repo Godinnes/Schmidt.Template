@@ -7,10 +7,10 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/core/sdk:3.1-buster AS build
 WORKDIR /src
-COPY ["Schmidt.Template.Api/Schmidt.Template.Api.csproj", "Schmidt.Template.Api/"]
+COPY ["Schmidt.Template.Api/Schmidt.Template.Api.csproj", "src/Schmidt.Template.Api/"]
 RUN dotnet restore "Schmidt.Template.Api/Schmidt.Template.Api.csproj"
 COPY . .
-WORKDIR "Schmidt.Template.Api"
+WORKDIR "src/Schmidt.Template.Api"
 RUN dotnet build "Schmidt.Template.Api.csproj" -c Release -o /app/build
 
 FROM build AS publish
